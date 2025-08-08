@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrFluff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <script src="/Home/script.js"></script>
+    <link rel="icon" href="/Home/icon/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        .jiantou {
+            width: 0px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            /* max-width: 100%;
+            overflow-x: hidden; */
+        }
+
+        .bili {
+            width: 100%;
+            height: 350%;
+        }
+
+        /* ↓相当于平滑动画，每个html都要复制上！ */
+        .bx-search,
+        .headword,
+        .logo-group,
+        .mmxs,
+        .art-img,
+        .introimgr,
+        .introp a,
+        .introimgrendone,
+        .guanzhubloke {
+            cursor: pointer;
+            transition: .5s;
+        }
+    </style>
+    <script>
+        window.addEventListener('wheel', function (e) {
+            if (e.deltaX !== 0) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="bili">
+        <!-- header -->
+        <div id="header">
+            <div class="logo-group cursor-hover" style="display: flex;" title="返回首页">
+                <a href="/Home/">
+                    <img class="align" src="/Home/图片/商标/商标half透明灰.png" alt="〇" width="35px">
+                    <img class="hidden-xs" src="/Home/图片/商标/mf书法.png" alt="Mr.Fluff" width="85px" style="margin: 10px;">
+                </a>
+            </div>
+            <div class="heade hidden-xs">
+                <a href="/Home/videoworks-area/">
+                    <p class="headword cursor-hover">影视作品</p>
+                </a>
+                <a href="/Home/art-area/">
+                    <p class="headword cursor-hover">艺术作品</p>
+                </a>
+                <a href="/Home/introduce-area/">
+                    <p class="headword cursor-hover">毛毛介绍</p>
+                </a>
+                <a href="https://space.bilibili.com/559853191?spm_id_from=333.1007.0.0" target="_blank">
+                    <p class="headword cursor-hover">B站账号</p>
+                </a>
+            </div>
+            <div class="logo-group">
+                <a href="/Home/special-area/">
+                    <img class="cursor-hover mmxs hidden-xs" src="/Home/图片/商标/mmxs小篆.png" alt="毛毛先生" width="120px">
+                </a>
+                <a href="/Home/Searching/">
+                    <i class='bx bx-search cursor-hover' alt="搜索"></i>
+                </a>
+            </div>
+        </div>
+        <span style="visibility: hidden; position: absolute; top: 0px; z-index: -1;">&nbsp;</span>
+        <!-- sections -->
+        <div id="neirong" style="overflow: auto;">
+            <!-- 填充表头位置 -->
+            <div style="display:flex;width: 100%;height: 50px;background-color: rgb(0, 0, 0);"></div>
+            <!-- 上栏艺术照区 -->
+            <div id="artarea">
+                <a href="/Home/art-area/" class="hh1a">
+                    <h1 class="hh1" style="font-size: 50px;">毛毛的艺术展览:</h1>
+                </a>
+                <p style="font-size: 20px;">美丽而不缺乏豪放 <a id="photoa" href="/Home/art-area/">了解更多</a><img class="jiantou"
+                        src="/Home/svg/right-arrow-blue.svg" alt="">
+                </p>
+                <div class="box">
+                    <ul class="items">
+                        <!-- left -->
+                        <li class="item three">
+                            <img class="art-img art-img-l" src="/Home/图片/艺术照/毛毛先森老墙壁背景照艺术照.jpg" alt="special background">
+                        </li>
+                        <!-- middle -->
+                        <li class="item one active">
+                            <img class="art-img" src="/Home/图片/艺术照/毛毛油画宣传图.png" alt="Handsome Artistical">
+                        </li>
+                        <!-- right -->
+                        <li class="item two">
+                            <img class="art-img art-img-r" src="/Home/图片/艺术照/毛毛发光宣传图.png" alt="MrFlUff light">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中栏影视作品区 -->
+            <div id="videoshow">
+                <a href="/Home/videoworks-area/" class="hh1a" style="align-self: flex-start;">
+                    <h1 class="hh1">毛毛的精彩影视作品:</h1>
+                </a>
+                <h2 class="hh1 notpoint">最新视频:</h2>
+                <div class="vonerow">
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面1">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面2">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vonerow">
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面3">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面4">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="hh1 notpoint">优秀视频:</h2>
+                <div class="vonerow">
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面5">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面6">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vonerow">
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面7">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                    <div class="bloke">
+                        <div class="bloke1">
+                            <img class="fengmian" src="" alt="封面8">
+                        </div>
+                        <div class="vtr">
+                            <a href="#" style="text-decoration: none;">
+                                <h4 class="videotitle hh1"></h4>
+                            </a>
+                            <p class="videodeeply"></p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hh1 notpoint">……</h1>
+                <h1 class="hh1"> </h1>
+                <h1 class="hh1 notpoint">了解更多?!</h1>
+                <div class="understandmore">
+                    <a id="photoab" href="/Home/videoworks-area/" style="font-size: 20px;">点这里</a><img
+                        class="jiantou" src="/Home/svg/diagonal-arrow.svg" alt="">
+                </div>
+            </div>
+            <!-- 底栏毛毛介绍 -->
+            <div id="introduce">
+                <a class="hh1a" href="/Home/introduce-area/">
+                    <h1 class="hh1" style="font-size: 50px;">毛毛先生，是谁?</h1>
+                </a>
+                <div class="strow">
+                    <div class="allintrop">
+                        <p class="introp">-毛毛先森（Mr.Fluff），一说毛毛先生，原名袁毛笒，一类极为温顺的物种，世界上现仅存4000只左右。</p>
+                        <p class="introp">-他热爱学习，仅乐器就会400余种，并且熟练掌握；编程语言样样涉猎；摄影极为喜爱，有时配合锥林参演短片。</p>
+                        <p class="introp">-他的生存技能也十分之多，是个不二的生存大师。他还酷爱冒险，这不，他连人带床登上了珠穆朗玛峰峰顶!</p>
+                    </div>
+                    <img class="introimgr" src="/Home/图片/介绍区/登顶.png" alt="毛毛登顶图">
+                </div>
+                <div class="strow2">
+                    <img class="introimgr" src="/Home/图片/介绍区/抽象油画.png" alt="毛毛登顶图">
+                    <div class="allintrop">
+                        <p class="introp">-毛毛先生也极其喜爱绘画，他最擅长的画派是抽象派和印象派。</p>
+                        <p class="introp p-a">-他有着独特的审美和一鸣惊人的画工，所含有的艺术细胞也是好上加好，遗传了其父亲<a href="/Home/introduce-area/more/Bligh_Tuis/"
+                                title="有关他的介绍">布莱·吐易斯·侯王</a>的聪明才智。</p>
+                        <p class="introp">-曾有人问他: <br>[你为何如此出色，是因为你那特有的天赋吗？] <br>-他却不以为意地回答道: <br>[世上无难事，只怕有心人]</p>
+                    </div>
+                </div>
+                <div class="strow">
+                    <div class="allintrop">
+                        <p class="introp p-a">-毛毛先生对于玩乐这方面也算是个讲究的专业人士，他花了大量的时间进行研究、分析、实践，写就了人生中所写论文中的第1000个论文:<a
+                                href="/Home/introduce-area/more/Theory-of-play/" title="相关介绍">《玩乐论》</a></p>
+                        <p class="introp">-他人缘颇广，都算得上是彼此的良师益友。他们互相学习，取长补短，都收获了诸多成就和美誉。</p>
+                        <p class="introp">-你看，这不正在和他的朋友们举办派对呢嘛！他们说说唱唱，笑口常开，乐此不彼，这样的友谊实在令人羡慕!</p>
+                    </div>
+                    <img class="introimgr" src="/Home/图片/介绍区/party.jpg" alt="毛毛登顶图">
+                </div>
+                <div class="strow2">
+                    <img class="introimgr" src="/Home/图片/介绍区/简笔画.jpg" alt="毛毛登顶图">
+                    <div class="allintrop">
+                        <p class="introp p-a">-wow，看，此为何物？当然是锥林给毛毛画的简笔画啦！只可惜这块板子被<a href="/Home/introduce-area/more/ge-ge-wu/"
+                                title="有关他的介绍">乌鸦先生</a>的主人给戳得稀巴烂了。这张图片也算是这板子的遗照了，可惜可惜。</p>
+                    </div>
+                </div>
+                <div class="strowend">
+                    <div class="allintropend">
+                        <p class="introp">-毛毛先森的主人锥林总喜欢给毛毛拍短片，制作一些艺术照片，导致整个屋子里都弥漫着艺术的气息。这也是毛毛先生有如此优点的另一个原因：拥有前车之鉴。</p>
+                        <p class="introp">
+                            -鉴于自己的艺术作品过多，质量超高却无人欣赏，锥林做了个自己和袁毛笒的展览，可惜观赏的人的数量屈手可数，他们俩便只好收手。时光飞逝，岁月荏苒，一年过后，他们俩创作出了诸多作品，决定再次举办画展，一鸣惊人，可惜理想与现实终有差异。
+                        </p>
+                        <p class="introp p-a">-幸好他们在布置完画展后，用手机照了相，否则这份回忆便只会永远封印在他们二人的脑海里。既然如此，你为何不来欣赏欣赏呢？对了，你也可以在<a
+                                href="/Home/art-area/" target="_blank">艺术作品</a>中欣赏锥林的作品！</p>
+                    </div>
+                    <div class="introimgrend-group">
+                        <div class="introimgrend">
+                            <h1 class="hh1 notpoint">OLD:</h1>
+                            <img class="introimgrendone" src="/Home/图片/介绍区/展览old.jpg" alt="毛毛登顶图">
+                        </div>
+                        <div class="introimgrend">
+                            <h1 class="hh1 notpoint">NEW:</h1>
+                            <img class="introimgrendone" src="/Home/图片/介绍区/展览new.png" alt="毛毛登顶图">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hh1 notpoint">……</h1>
+                <h1 class="hh1"> </h1>
+                <h1 class="hh1 notpoint">了解更多?!</h1>
+                <div class="understandmore">
+                    <a id="photoab" href="/Home/introduce-area/" style="font-size: 20px;">详细介绍</a><img class="jiantou"
+                        src="/Home/svg/diagonal-arrow.svg" alt="">
+                </div>
+            </div>
+            <!-- 关注 -->
+            <div id="guanzhu">
+                <h1 class="hh1 notpoint">想关注毛毛先生b站号？冇问题!</h1>
+                <div class="row">
+                    <p style="margin: 40px;font-size: 20px;">前去关注 →</p>
+                    <div class="guanzhubloke">
+                        <a href="https://space.bilibili.com/559853191?spm_id_from=333.1007.0.0" title="进入B站毛毛先森个人空间"
+                            target="_blank">
+                            <i class='bx bx-plus'></i> 关注</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- buttom -->
+        <div id="buttom">
+            <ul class="btmul">
+                <li>
+                    <a href="/Home/videoworks-area/" class="gang">
+                        影视作品</a>
+                </li>
+                <li>
+                    <a href="/Home/art-area/" class="gang">
+                        艺术作品</a>
+                </li>
+                <li>
+                    <a href="/Home/introduce-area/" class="gang">
+                        毛毛介绍</a>
+                </li>
+                <li>
+                    <a href="https://space.bilibili.com/559853191?spm_id_from=333.1007.0.0" target="_blank">
+                        B站账号</a>
+                </li>
+
+            </ul>
+            <p class="buttomtype">Copyright © 2022 Mr.Fluff Cultural Communication Co., LTD</p>
+            <p class="buttomtype">备案号将来会有</p>
+        </div>
+    </div>
+    <script>
+        // 批量更改视频区域样式
+        // 创建一个数组，包含每个组的标题、段落和图片路径
+        var contentData = [
+            {
+                heading: "新标题1",
+                paragraph: "新段落1",
+                imagePath: "新图片路径1"
+            },
+            {
+                heading: "新标题2",
+                paragraph: "新段落2",
+                imagePath: "新图片路径2"
+            },
+            {
+                heading: "新标题3",
+                paragraph: "新段落3",
+                imagePath: "新图片路径3"
+            },
+            {
+                heading: "新标题4",
+                paragraph: "新段落4",
+                imagePath: "新图片路径4"
+            },
+            {
+                heading: "我衬，弹力球!",
+                paragraph: "毛毛先生玩个了弹力球,结果…",
+                imagePath: "/Home/图片/封面/弹力球4比3.jpg"
+            },
+            {
+                heading: "新标题6",
+                paragraph: "新段落6",
+                imagePath: "新图片路径6"
+            },
+            {
+                heading: "新标题7",
+                paragraph: "新段落7",
+                imagePath: "新图片路径7"
+            },
+            {
+                heading: "新标题8",
+                paragraph: "新段落8",
+                imagePath: "新图片路径8"
+            }
+            // 添加更多的对象，每个对象代表一个组的内容
+        ];
+
+        window.onload = function () {
+            var blokes = document.querySelectorAll(".bloke");
+
+            blokes.forEach(function (bloke, index) {
+                var data = contentData[index];
+
+                bloke.querySelector(".videotitle").innerHTML = data.heading;
+                bloke.querySelector(".videodeeply").innerHTML = data.paragraph;
+                bloke.querySelector(".fengmian").src = data.imagePath;
+            });
+        };
+        
+        // 检测设备是否支持触摸事件
+        function isTouchDevice() {
+            return 'ontouchstart' in window || navigator.maxTouchPoints;
+        }
+
+        // 根据设备是否支持触摸事件来应用不同的样式
+        if (isTouchDevice()) {
+            document.jiantou.style.width = "0px";
+        } else {
+            document.jiantou.style.width = "14px";
+        }
+        // 阻止左右滑动页面
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault()
+        });
+    </script>
+</body>
+
+</html>

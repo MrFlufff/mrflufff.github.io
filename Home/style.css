@@ -1,0 +1,610 @@
+:root {
+    --black: #393939;
+    --grey: #eee;
+    --background-color: rgb(241,241,242);
+    --whitegrey: #dadada;
+    --white: #ffffff;
+    --blue: rgb(57, 159, 264);
+    --guanzhu-shadow: 2px 5px 5px rgba(0,82,255,.102),1px 10px 25px rgba(0,82,255,.102),2px 10px 50px rgba(0,82,255,.549);
+    --dark-blue: rgb(61, 109, 235);
+    --box-shadow-card: 0px 1px 4px 0px rgba(0,0,0,.05),0px 15px 20px -1px rgba(0,0,0,.025);
+    --footer-pipe-color:rgba(0,0,0,0.48)
+}
+
+/* fHmcl */
+
+body {
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+a {
+    list-style: none !important;
+    color: #eeeeee00;
+}
+
+p,
+.notpoint {
+    cursor: default;
+}
+
+#header {
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0vw 5vw;
+    background-color: rgba(0, 0, 0, 0.785);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 9999;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #artarea .hh1a h1 {
+        font-size: 45px !important;
+    }
+
+    .vonerow {
+        flex-direction: column;
+    }
+
+    .fengmian {
+        width: 100% !important;
+    }
+
+    .introimgr,
+    .bloke {
+        width: 90% !important;
+    }
+
+    .strow {
+        flex-direction: column;
+    }
+
+    .strow2 {
+        flex-direction: column-reverse;
+    }
+
+    .introp,
+    .p-a {
+        justify-content: center;
+        font-size: 10px;
+        width: 90vw !important;
+    }
+    .allintrop,
+    .introp,
+    .p-a {
+        margin: 0;
+        align-items: center;
+        width: 80% !important;
+    }
+
+    .allintropend {
+        margin: 10px !important;
+    }
+
+    .introimgrend-group {
+        flex-direction: column;
+    }
+}
+
+.headword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: var(--whitegrey);
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    padding: auto;
+}
+
+.heade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cursor-hover:hover {
+    color: var(--white);
+    transform: scale(1.2);
+}
+
+.bx-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    color: var(--whitegrey);
+    text-align: center;
+    font-size: 15px;
+}
+
+.mmxs {
+    display: flex;
+    justify-content: center;
+    margin: 0px 6px 0px 0px;
+}
+
+#neirong {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    width: 100%;
+    margin: 0;
+    /* height: 270vh; */
+    /* padding-top: 350%; */
+    padding: 0px 0px 8px;
+    box-sizing: border-box;
+}
+
+/* #neirong:after {
+    content: '';
+    padding-top: 90%;
+} */
+
+.hh1 {
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+    color: var(--black);
+}
+
+.hh1a {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hh1a:hover,
+.btmul li a:hover,
+#photoa:hover,
+#photoab:hover,
+.videotitle:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 1px;
+    color: var(--black);
+}
+
+#photoa {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#photoab {
+    color: var(--dark-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#photoa:hover~.jiantou,
+#photoab:hover~.jiantou {
+    width: 14px;
+}
+
+#introduce,
+#videoshow,
+#guanzhu {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    margin: 0px;
+    border: #dadada84 solid 5px;
+    background-color: #eee;
+    box-shadow: var(--box-shadow-card);
+}
+
+#artarea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    margin: 0px;
+    padding: 0;
+    background-color: #eee;
+}
+
+#artarea:after {
+    content: '';
+    padding-top: 50%;
+}
+
+#videoshow:after {
+    content: '';
+    padding-top: 10%;
+}
+
+#introduce:after {
+    content: '';
+    padding-top: 15%;
+}
+
+#guanzhu:after {
+    content: '';
+    padding-top: 5%;
+}
+
+#introduce,
+#videoshow,
+#guanzhu,
+.fengmian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#artarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+.art-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    border-radius: 8%;
+}
+
+.art-img:hover,
+.introimgr:hover,
+.introimgrendone:hover {
+    transform: scale(1.1);
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.box .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+}
+
+.box .items .one {
+    width: 60%;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.box .items .two {
+    width: 30%;
+    flex-shrink: 0;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.box .items .three {
+    width: 30%;
+    flex-shrink: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.box .items .art-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin: 0px;
+    box-shadow: var(--box-shadow-card);
+}
+
+.bloke {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    border-radius: 20px;
+    width: 45%;
+    margin: 5px 10px;
+    /* height: 15vh; */
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-card);
+}
+
+.bloke:after {
+    content: '';
+    padding-top: 30%;
+}
+
+.bloke:after~.fengmian {
+    content: '';
+    padding: 10%;
+}
+
+.bloke .fengmian {
+    display: flex;
+    /* height: 10vh; */
+    width: 14vw;
+    margin: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.bloke1 {
+    display: flex;
+    flex: 1;
+    /* height: 10vh; */
+    border-radius: 20px;
+    margin: 0px 1vw;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow-card);
+}
+
+.videotitle {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    font-size: auto;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.videodeeply {
+    display: flex;
+    flex: 1;
+    font-size: auto;
+    color: #b5b5b5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vtr {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.vonerow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.understandmore {
+    display: flex;
+    align-items: center;
+}
+
+.introduce {
+    display: flex;
+    align-items: center;
+}
+
+
+.strow,
+.strow2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.strowend {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.introimgr,
+.introimgrendone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,.05),0px 15px 20px -1px rgba(0,0,0,.025);
+}
+
+.introimgr {
+    width: 45%;
+}
+
+.introimgrendone {
+    width: 90%;
+}
+
+.introimgrend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introimgrend-group {
+    display: flex;
+}
+
+.introp,
+.intropr {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.introp {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 14px 20px 20px;
+}
+
+.introp a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    border-bottom: 2px dashed;
+}
+
+.p-a {
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.introp a:hover {
+    color: var(--blue);
+}
+
+
+.intropr {
+    margin: 20px;
+}
+
+.allintrop {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.allintropend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 70px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guanzhubloke {
+    display: flex;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    box-shadow: var(--guanzhu-shadow);
+}
+
+.guanzhubloke:hover a {
+    pointer-events: auto;
+    color: #fff; /* 设置链接的颜色 */
+    text-decoration: none; /* 去除链接的下划线 */
+}
+
+.guanzhubloke a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+    color: var(--white); /* 设置链接的颜色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    padding: 10px; /* 添加内边距 */
+    border-radius: 10px; /* 设置圆角 */
+    background-color: hsl(198deg 100% 46%); /*设置背景颜色 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+.guanzhubloke a:hover {
+    background-color: hsl(198, 84%, 52%); /* 链接悬停时的背景颜色 */
+}
+
+#buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dadadaba;
+    backdrop-filter: saturate(100%) blur(20px);
+    height: 30vh;
+}
+
+.btmul {
+    margin: 10px 0;
+    padding: 0px;
+    list-style: none;
+    font-size: 10px;
+    color:var(--black);
+}
+
+.btmul li {
+    display: inline;
+    margin: 5px;
+}
+
+.btmul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    inset-inline-end: 9px;
+    bottom: 0;
+    inset-inline-start: 0;
+    pointer-events: none;
+}
+
+.btmul .gang::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 1px;
+    background-color: var(--footer-pipe-color);
+    margin: 3px 5px;
+}
+
+.btmul li a {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#buttom>.buttomtype {
+    font-size: 10px;
+    color: rgb(168, 168, 168);
+}
